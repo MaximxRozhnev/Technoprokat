@@ -1,26 +1,32 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import 'tailwindcss';
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-rubik), sans-serif;
+	background-color: #212121;
+}
+
+html {
+	--font-rubik: 'Rubik', sans-serif;
+	scroll-behavior: smooth;
+}
+
+input[type='date'] {
+	color: #9ca3af; /* цвет текста */
+	background-color: #1f1f1f; /* фон, если нужно */
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+	filter: invert(1); /* делает стрелку календаря белой */
+}
+
+/* Убирает стрелки в Chrome, Safari, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Убирает стрелки в Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
 }
