@@ -15,5 +15,3 @@ Rent — это современный лендинг для аренды раз
 - **Иконки:** lucide-react
 
 <img width="1890" height="3470" alt="image" src="https://github.com/user-attachments/assets/37748b15-417a-46ad-bc6d-74e3c5c9ec4c" />
-
-<img width="250" height="3672" alt="image" src="https://github.com/user-attachments/assets/67fd1aac-7967-4100-9ee3-c42a35bd0d62" />
